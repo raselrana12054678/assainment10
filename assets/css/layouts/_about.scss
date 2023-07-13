@@ -1,0 +1,69 @@
+// about-box satrt css//
+.about-box {
+    .title {
+        h1 {
+            font-weight: 700;
+            font-family: 'tahoma',sans-serif;
+            position: relative;
+            padding-bottom: 10px;
+            &::before {
+                content: '';
+                width: 72px;
+                height: 2px;
+                position: absolute;
+                background: yellow;
+                bottom: 0;
+                left: 44%;
+                right: 50%;
+                transform: translate(50%,50%);
+            }
+        }
+    }
+    .about-title {
+        text-transform: capitalize;
+        background: rgb(182, 141, 6);
+        padding: 50px 30px;
+        h1 {
+
+        }
+        p {
+
+        }
+        .btn {
+            border: none;
+            padding-left: 0;
+            a {
+                text-decoration: none;
+                text-transform: capitalize;
+                padding: 10px 29px;
+                border: 1px solid rgb(8, 225, 8);
+                text-align: center;
+                border-radius: 16px;
+                position: relative;
+                transition: .6s;
+                z-index: 99999;
+                &:hover {
+                    border: none;
+                    transition: .6s;
+                }
+                &:hover::before {
+                    width: 100%;
+                    right: 100%;
+                    z-index: -1;
+                    border-radius: 30px;
+                    border: none;
+                }
+                &::before {
+                    content: '';
+                    width: 0%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    background: yellow;
+                    transition: .6s;
+                }
+            }
+    }
+}
+}

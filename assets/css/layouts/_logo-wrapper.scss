@@ -1,0 +1,24 @@
+.log-wrapper {
+    background-color: teal;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    .btn {
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: 'tahoma',sans-serif;
+            color: #fff;
+            padding: 10px 30px;
+            border: 1px solid #12c927;
+            text-decoration: none;
+            text-transform: capitalize;
+            border-radius: 5px;
+            transition: .8s;
+            &:hover {
+                background-color: #cb0994;
+                border-color: #cb0994;
+                border-radius: 6px;
+            }
+        }
+    }
+}
